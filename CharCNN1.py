@@ -32,7 +32,7 @@ class CharCNN1(object):
             loss_fnc(str): Loss function
             drop_prob(str): Dropout probability (percentage of units to drop)
         
-        """"
+        """
         self.input_size = input_size
         self.vocab_size = vocab_size
         self.embedding_size = embedding_size
