@@ -23,14 +23,12 @@ if __name__ == "__main__":
                       input_size=config["data"]["input_size"],
                       vocab=config["data"]["vocab"],
                       num_classes=config["data"]["num_classes"])
-    train_data.load()
     X_train, y_train = train_data.load()
     
     dev_data = Data(path=config["data"]["dev_path"],
                       input_size=config["data"]["input_size"],
                       vocab=config["data"]["vocab"],
                       num_classes=config["data"]["num_classes"])
-    dev_data.load()
     X_dev, y_dev = dev_data.load()
     
     if FLAGS.m == "CharCNN1":
