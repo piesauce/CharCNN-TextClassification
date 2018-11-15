@@ -11,7 +11,7 @@ from keras.models import Model
 
 class CharTCN(object):
     """
-    Implements a character-level convolutional neural network
+    Implements a character-level TCN (Temporal Convolutional Network). Includes dilated convolutations and residual connections.
     
     """
     def __init__(self, input_size, vocab_size, embedding_size,
