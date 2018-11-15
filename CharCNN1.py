@@ -11,7 +11,9 @@ from keras.models import Model
 
 class CharCNN1(object):
     """
-    Implements a character-level convolutional neural network
+    Implements a character-level convolutional neural network for multi-class text classification.
+    Multiple filters of varying widths are used to extract informative n-gram character features.
+    Global max pooling is used to extract the most important feature per filter
     """
     def __init__(self, input_size, vocab_size, embedding_size,
                  num_classes, conv_layers, fc_layers,
