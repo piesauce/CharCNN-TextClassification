@@ -12,7 +12,8 @@ from keras.models import Model
 
 class CharCNN2(object):
     """
-    Implements a character-level convolutional neural network
+    Implements a 'vanilla' character-level convolutional neural network with multiple filters and max pooling.
+    The conv net layers extract informative n-gram character features.
     """
     def __init__(self, input_size, vocab_size, embedding_size,
                  num_classes, conv_layers, fc_layers,
